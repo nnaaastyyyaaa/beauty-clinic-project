@@ -1,0 +1,163 @@
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/play-v21-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Play";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/play-v21-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v50-latin-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/roboto-v50-latin-600.woff2") format("woff2");
+}
+
+:root {
+  --color-primary-light: #fff;
+  --color-primary-blue-light: #2b7fff;
+  --color-primary-blue-dark: #011c44;
+  --color-secondary-grey-dark: #4a4a4a;
+  --color-secondary-grey-light: #747272;
+  --color-secondary-blue: #011f4a;
+  --color-secondary-yellow: #ffd02b;
+}
+
+body {
+  color: var(--color-primary-blue-dark);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2 {
+  font-family: Play sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+}
+
+address {
+  font-style: normal;
+}
+/* header */
+
+.link {
+  color: var(--color-primary-blue-dark);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--color-primary-blue-light);
+  font-weight: 700;
+}
+
+.main-title {
+  color: var(--color-primary-blue-light);
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 0.8;
+}
+
+.main-button {
+  color: var(--color-primary-light);
+  background-color: var(--color-primary-blue-light);
+  border: 2px solid var(--color-primary-blue-light);
+  border-radius: 32px;
+  font-weight: 600;
+}
+
+.main-button:hover {
+  color: var(--color-primary-blue-dark);
+  background-color: transparent;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* about */
+.about .accent {
+  color: var(--color-primary-blue-light);
+  text-transform: capitalize;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.description .accented {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* reasons */
+.reasons .accent {
+  color: var(--color-primary-blue-light);
+}
+
+.reason {
+  line-height: 1.3;
+}
+
+/* procedures */
+.procedures .accent {
+  color: var(--color-primary-blue-light);
+}
+
+.procedure-name {
+  color: var(--color-primary-light);
+  font-size: 22px;
+}
+
+/* location */
+.location .accent {
+  color: var(--color-primary-blue-light);
+}
+
+.location-text {
+  font-weight: 600;
+  font-size: 22px;
+}
+/* footer */
+.link-footer {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.link-footer:hover {
+  color: var(--color-primary-blue-light);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.copyright {
+  color: var(--color-secondary-grey-light);
+  font-size: 13px;
+}
