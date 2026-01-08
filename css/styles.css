@@ -30,6 +30,10 @@
   src: url("../fonts/roboto-v50-latin-600.woff2") format("woff2");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --color-primary-light: #fff;
   --color-primary-blue-light: #2b7fff;
@@ -46,6 +50,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.2;
+  margin: 0px;
 }
 
 ul {
@@ -61,6 +66,27 @@ h2 {
 address {
   font-style: normal;
 }
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  padding: 24px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 48px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0px;
+}
 /* header */
 
 .link {
@@ -73,11 +99,21 @@ address {
   font-weight: 700;
 }
 
+/* main */
+.main-section {
+  padding: 17.46px 605px 63.085px 106px;
+}
+
+.name-text {
+  margin-bottom: 16px;
+}
 .main-title {
   color: var(--color-primary-blue-light);
   font-weight: 700;
   font-size: 140px;
   line-height: 0.8;
+  margin-bottom: 40px;
+  margin-top: 0;
 }
 
 .main-button {
@@ -86,6 +122,7 @@ address {
   border: 2px solid var(--color-primary-blue-light);
   border-radius: 32px;
   font-weight: 600;
+  padding: 16px 32px;
 }
 
 .main-button:hover {
@@ -100,6 +137,14 @@ address {
 }
 
 /* about */
+.about {
+  padding: 63.085px 0 88px 0;
+}
+
+.about-text {
+  margin-bottom: 40px;
+}
+
 .about .accent {
   color: var(--color-primary-blue-light);
   text-transform: capitalize;
@@ -117,6 +162,10 @@ address {
 }
 
 /* reasons */
+.reasons {
+  padding: 88px 90px 48px 90px;
+}
+
 .reasons .accent {
   color: var(--color-primary-blue-light);
 }
@@ -126,6 +175,9 @@ address {
 }
 
 /* procedures */
+.procedures {
+  padding: 48px 12px;
+}
 .procedures .accent {
   color: var(--color-primary-blue-light);
 }
@@ -136,6 +188,9 @@ address {
 }
 
 /* location */
+.location {
+  padding: 48px 105px 48px 76px;
+}
 .location .accent {
   color: var(--color-primary-blue-light);
 }
