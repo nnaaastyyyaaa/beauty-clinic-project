@@ -67,6 +67,10 @@ address {
   font-style: normal;
 }
 
+li {
+  text-decoration: none;
+}
+
 .container {
   width: 100%;
   max-width: 1288px;
@@ -99,9 +103,31 @@ p {
   font-weight: 700;
 }
 
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 152px;
+}
+
+.link-list {
+  display: flex;
+  gap: 32px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 152px;
+}
+
+.section-link {
+  display: flex;
+  gap: 56px;
+}
+
 /* main */
 .main-section {
-  padding: 17.46px 605px 63.085px 106px;
+  padding: 18px 705px 126px 205px;
 }
 
 .name-text {
@@ -162,6 +188,23 @@ p {
 }
 
 /* reasons */
+.reasons-container {
+  display: flex;
+  gap: 56px;
+  margin-top: 48px;
+}
+
+.reasons-title {
+  text-align: center;
+  max-width: 432px;
+  margin: 0 314px;
+}
+
+.reason-item {
+  text-align: center;
+  padding: 24px 32px;
+}
+
 .reasons {
   padding: 88px 90px 48px 90px;
 }
@@ -170,6 +213,12 @@ p {
   color: var(--color-primary-blue-light);
 }
 
+.reason-block {
+  background-color: var(--color-primary-light);
+  border-radius: 32px;
+  flex-basis: 316px;
+  height: 181px;
+}
 .reason {
   line-height: 1.3;
 }
@@ -178,18 +227,32 @@ p {
 .procedures {
   padding: 48px 12px;
 }
+
+.procedures-title {
+  text-align: center;
+  margin: 0 353px;
+}
+
 .procedures .accent {
   color: var(--color-primary-blue-light);
 }
 
+.procedures-list {
+  display: flex;
+  justify-content: space-between;
+}
 .procedure-name {
-  color: var(--color-primary-light);
+  color: var(--color-primary-blue-dark);
   font-size: 22px;
 }
 
 /* location */
 .location {
   padding: 48px 105px 48px 76px;
+}
+
+.location-title {
+  padding: 0 314px;
 }
 .location .accent {
   color: var(--color-primary-blue-light);
@@ -200,19 +263,49 @@ p {
   font-size: 22px;
 }
 /* footer */
+.footer {
+  background-color: var(--color-primary-blue-dark);
+  height: 278px;
+}
+
 .link-footer {
   color: var(--color-primary-light);
   text-decoration: none;
   font-size: 16px;
 }
 
+.link-item {
+  margin-bottom: 16px;
+}
+
 .link-footer:hover {
   color: var(--color-primary-blue-light);
-  font-weight: 700;
-  font-size: 16px;
 }
 
 .copyright {
   color: var(--color-secondary-grey-light);
   font-size: 13px;
+}
+
+.footer-nav {
+  font-size: 16px;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.section-links {
+  flex-grow: 0.4;
+  justify-content: space-between;
+  display: flex;
+}
+
+.contacts-container {
+  max-width: 192px;
+}
+
+.icons {
+  display: flex;
+  padding: 0;
+  gap: 16px;
 }
