@@ -126,6 +126,11 @@ p {
 }
 
 /* main */
+.hero-section {
+  background-image: url(../images/hero-section-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .main-section {
   padding: 18px 705px 126px 205px;
 }
@@ -165,10 +170,15 @@ p {
 /* about */
 .about {
   padding: 63.085px 0 88px 0;
+  display: flex;
 }
 
 .about-text {
   margin-bottom: 40px;
+}
+
+.about-title {
+  max-width: 529px;
 }
 
 .about .accent {
@@ -180,6 +190,19 @@ p {
   font-weight: 400;
   font-size: 22px;
   line-height: 1.7;
+  max-width: 709px;
+}
+
+.about-image {
+  border-radius: 350px;
+}
+
+.before-image {
+  margin-left: 32px;
+}
+
+.after-image {
+  margin-left: 272px;
 }
 
 .description .accented {
@@ -203,6 +226,10 @@ p {
 .reason-item {
   text-align: center;
   padding: 24px 32px;
+  width: 316px;
+  height: 181px;
+  border-radius: 32px;
+  box-shadow: 0 4px 4px 0 rgba(168, 198, 245, 0.38);
 }
 
 .reasons {
