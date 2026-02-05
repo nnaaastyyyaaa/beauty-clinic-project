@@ -55,6 +55,7 @@ body {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 h2 {
@@ -278,6 +279,10 @@ p {
 }
 
 .procedure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   flex-basis: calc((100% - 32px) / 3);
   border-radius: 4px 120px;
   background-image: linear-gradient(
@@ -308,10 +313,12 @@ p {
 }
 
 .procedure-name {
-  color: var(--color-primary-blue-dark);
+  position: absolute;
+  bottom: 32px;
+  max-width: 152px;
+  color: var(--color-primary-light);
   font-size: 22px;
   text-align: center;
-  justify-content: start;
 }
 
 /* location */
@@ -358,20 +365,27 @@ p {
 .footer-nav {
   font-size: 16px;
   display: flex;
+  gap: 20px;
+}
+
+.section-links,
+.footer-address {
+  flex-basis: 50%;
   flex-grow: 1;
-  justify-content: space-between;
-}
-
-.section-links {
-  flex-grow: 0.4;
-  justify-content: space-between;
   display: flex;
+  gap: 20px;
 }
 
-.contacts-container {
-  max-width: 192px;
+.footer-logo,
+.footer-list {
+  flex-grow: 1;
+  gap: 20px;
 }
 
+.address-list,
+.common-info {
+  flex-grow: 1;
+}
 .icons {
   display: flex;
   padding: 0;
@@ -380,4 +394,57 @@ p {
 
 .footer-icons {
   fill: var(--color-primary-light);
+}
+
+/* modal */
+
+.backdrop {
+  background-color: rgba(1, 31, 74, 0.4);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-title {
+  font-family: Play, sans-serif;
+  color: var(--color-primary-light);
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+}
+
+.modal-text {
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--color-primary-light);
+  text-align: center;
+}
+
+.modal {
+  position: relative;
+  width: 725px;
+  height: 680px;
+  border-radius: 48px;
+  background-color: var(--color-primary-blue-dark);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-accented {
+  color: var(--color-primary-blue-light);
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 42px;
+  right: 42px;
 }

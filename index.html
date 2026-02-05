@@ -56,7 +56,9 @@
           <div class="main-section">
             <p class="name-text">Косметологічна клініка</p>
             <h1 class="main-title">Beauty Zone</h1>
-            <button type="button" class="main-button">Замовити дзвінок</button>
+            <button type="button" class="main-button modal-btn-open">
+              Замовити дзвінок
+            </button>
             <p class="text">
               Запишись та отримай безкоштовну консультацію нашого косметолога
             </p>
@@ -195,10 +197,12 @@
       <div class="container">
         <div class="footer-nav">
           <nav class="section-links">
-            <a href="..index.html">
-              <img src="./images/logo.svg" alt="Логотип клініки" />
-            </a>
-            <ul>
+            <div class="footer-logo">
+              <a href="..index.html">
+                <img src="./images/logo.svg" alt="Логотип клініки" />
+              </a>
+            </div>
+            <ul class="footer-list">
               <li class="link-item">
                 <a class="link-footer" href="#">Про нас</a>
               </li>
@@ -213,8 +217,8 @@
               </li>
             </ul>
           </nav>
-          <address>
-            <ul>
+          <address class="footer-address">
+            <ul class="address-list">
               <li class="link-item">
                 <a class="link-footer" href="tel:+380960000007"
                   >+ 38 (096) 000 00 07</a
@@ -230,7 +234,8 @@
                   class="link-footer"
                   href="https://maps.app.goo.gl/Awu9S3JNjztneotB9"
                   target="_blank"
-                  >Україна, м. Київ, вул. Тараса Шевченка 5</a
+                  >Україна, м. Київ, <br />
+                  вул. Тараса Шевченка 5</a
                 >
               </li>
               <div class="icons-container">
@@ -259,13 +264,27 @@
                 </ul>
               </div>
             </ul>
+            <div class="common-info">
+              <a class="link-footer" href="#">Політика коніденційності</a>
+              <p class="copyright">&copy;2022 Дані захищені</p>
+            </div>
           </address>
-          <div class="common-info">
-            <a class="link-footer" href="#">Політика коніденційності</a>
-            <p class="copyright">&copy;2022 Дані захищені</p>
-          </div>
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <h2 class="modal-title">
+          Замовити <br />
+          дзвінок
+        </h2>
+        <p class="modal-text">
+          Запишіться <span class="modal-accented">безкоштовно</span> <br />
+          та отримайте подарунок
+        </p>
+        <button type="button" class="modal-btn-close">Close</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
