@@ -79,6 +79,18 @@ li {
   margin: 0 auto;
 }
 
+header .container {
+  display: flex;
+  max-width: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 24px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+}
+
 .title {
   margin-bottom: 48px;
 }
@@ -107,7 +119,9 @@ p {
 .nav-container {
   display: flex;
   align-items: center;
-  gap: 152px;
+  gap: 240px;
+  padding: 32px 100px;
+  margin: 0 auto;
 }
 
 .link-list {
@@ -122,7 +136,7 @@ p {
 .header-nav {
   display: flex;
   align-items: center;
-  gap: 152px;
+  gap: 240px;
 }
 
 .section-link {
@@ -132,12 +146,20 @@ p {
 
 /* main */
 .hero-section {
-  background-image: url(../images/hero-section-background.jpg);
+  background:
+    linear-gradient(
+      94deg,
+      #fff 9.65%,
+      rgba(255, 255, 255, 0.85) 26.08%,
+      rgba(255, 255, 255, 0.19) 52.74%,
+      rgba(255, 255, 255, 0) 74.46%
+    ),
+    url(../images/hero-section-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .main-section {
-  padding: 18px 705px 126px 205px;
+  padding: 124px 705px 126px 205px;
 }
 
 .name-text {
@@ -276,6 +298,13 @@ p {
 .procedures-list {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
+
+.our-procedures {
+  display: flex;
+  gap: 32px;
+  align-items: center;
 }
 
 .procedure {
@@ -292,6 +321,11 @@ p {
     #011c44 99.06%
   );
   height: 456px;
+  transition: transform 0.3s;
+}
+
+.procedure:hover {
+  transform: scale(1.05);
 }
 
 .carousel-button {
@@ -304,6 +338,10 @@ p {
   height: 44px;
   background-color: transparent;
   cursor: pointer;
+}
+
+.carousel-button.next {
+  transform: rotate(180deg);
 }
 
 .carousel-button:hover {
@@ -408,6 +446,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition:
+    visibility 0.3s,
+    opacity 0.3s;
 }
 
 .modal-title {
