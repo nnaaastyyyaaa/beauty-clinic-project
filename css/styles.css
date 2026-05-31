@@ -146,18 +146,12 @@ p {
 
 /* main */
 .hero-section {
-  background:
-    linear-gradient(
-      94deg,
-      #fff 9.65%,
-      rgba(255, 255, 255, 0.85) 26.08%,
-      rgba(255, 255, 255, 0.19) 52.74%,
-      rgba(255, 255, 255, 0) 74.46%
-    ),
-    url(../images/hero-section-background.jpg);
+  background: url(../images/background-main.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
+  background-position: right;
 }
+
 .main-section {
   padding: 124px 705px 126px 205px;
 }
@@ -174,7 +168,8 @@ p {
   margin-top: 0;
 }
 
-.main-button {
+.main-button,
+.modal-button {
   color: var(--color-primary-light);
   background-color: var(--color-primary-blue-light);
   border: 2px solid var(--color-primary-blue-light);
@@ -196,8 +191,9 @@ p {
 
 /* about */
 .about {
-  padding: 63.085px 0 88px 0;
+  padding: 0 0 88px 0;
   display: flex;
+  justify-content: space-between;
 }
 
 .about-text {
@@ -235,6 +231,18 @@ p {
 .description .accented {
   font-weight: 600;
   text-transform: capitalize;
+}
+.container-for-background {
+  position: relative;
+}
+
+.background-sections {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 1785px;
+
+  top: 700px;
 }
 
 /* reasons */
@@ -307,21 +315,43 @@ p {
   align-items: center;
 }
 
+.procedure.mask {
+  background-image: url(../images/face-mask.png);
+}
+
+.procedure.injection {
+  background-image: url(../images/face-injection.png);
+}
+
+.procedure.cleaning {
+  background-image: url(../images/face-cleaning.png);
+}
+
 .procedure {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: center;
   position: relative;
   flex-basis: calc((100% - 32px) / 3);
   border-radius: 4px 120px;
-  background-image: linear-gradient(
+  height: 456px;
+  transition: transform 0.3s;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.procedure::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 4px 120px;
+  background: linear-gradient(
     180deg,
     rgba(1, 28, 68, 0) 47.4%,
     rgba(1, 28, 68, 0.73) 82.66%,
     #011c44 99.06%
   );
-  height: 456px;
-  transition: transform 0.3s;
 }
 
 .procedure:hover {
@@ -371,13 +401,58 @@ p {
   color: var(--color-primary-blue-light);
 }
 
+.location-content {
+  display: flex;
+  gap: 32px;
+}
+
+.map-iframe {
+  border-radius: 32px;
+  width: 605px;
+  height: 481px;
+  border: none;
+}
+
+.section-form {
+  border-radius: 32px;
+  width: 423px;
+  height: 481px;
+  background: var(--color-primary-blue-dark);
+  background-image: url(../images/modal-background.png);
+  padding: 48px 56px;
+}
+
 .location-text {
   font-weight: 600;
   font-size: 22px;
+  color: var(--color-primary-light);
+  margin: 0 18px 32px 18px;
+  text-align: center;
+}
+
+.terms-section-form {
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--color-secondary-grey-light);
+  text-align: center;
+  max-width: 214px;
+  display: block;
+  margin: 0 auto;
+}
+
+.terms-section-form a {
+  color: var(--color-secondary-grey-light);
+  text-decoration-skip-ink: none;
+}
+
+.input-section-form {
+  margin-bottom: 16px !important;
+  max-height: 52px;
 }
 /* footer */
 .footer {
   background-color: var(--color-primary-blue-dark);
+  background-image: url(../images/footer-background.png);
   height: 278px;
 }
 
@@ -434,6 +509,15 @@ p {
   fill: var(--color-primary-light);
 }
 
+footer {
+  position: relative;
+}
+
+.footer-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
 /* modal */
 
 .backdrop {
@@ -457,6 +541,8 @@ p {
   font-weight: 700;
   font-size: 64px;
   text-align: center;
+  margin-bottom: 40px;
+  margin-top: 0;
 }
 
 .modal-text {
@@ -464,6 +550,7 @@ p {
   font-size: 22px;
   color: var(--color-primary-light);
   text-align: center;
+  margin-bottom: 32px;
 }
 
 .modal {
@@ -472,6 +559,8 @@ p {
   height: 680px;
   border-radius: 48px;
   background-color: var(--color-primary-blue-dark);
+  background-image: url(../images/modal-background.png);
+  padding: 42px 144px;
 }
 
 .backdrop.is-hidden {
@@ -488,4 +577,45 @@ p {
   position: absolute;
   top: 42px;
   right: 42px;
+  background-color: transparent;
+  border: none;
+}
+
+.visualy-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.input {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border: 2px solid var(--color-secondary-grey-light);
+  border-radius: 32px;
+  background-color: transparent;
+  padding: 18px 32px;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: var(--color-primary-light);
+}
+
+.input:focus {
+  outline: none;
+  background-color: var(--color-secondary-grey-light);
+}
+
+.modal-form {
+  padding: 0 62px;
+}
+
+.modal-button {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
 }
