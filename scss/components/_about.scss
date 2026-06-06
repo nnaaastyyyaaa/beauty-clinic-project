@@ -1,5 +1,6 @@
 .about {
   padding: 0 0 88px 0;
+  position: relative;
   display: flex;
   justify-content: space-between;
 }
@@ -26,14 +27,19 @@
 
 .about-image {
   border-radius: 350px;
+  width: 327px;
+  height: 327px;
 }
 
 .before-image {
-  margin-left: 32px;
+  left: 742px;
+  position: absolute;
 }
 
 .after-image {
-  margin-left: 272px;
+  left: 914px;
+  top: 368px;
+  position: absolute;
 }
 
 .description .accented {
@@ -51,4 +57,22 @@
   height: 1785px;
 
   top: 700px;
+}
+
+.big-star {
+  position: absolute;
+  left: 880px;
+  top: 346px;
+}
+
+.middle-star {
+  position: absolute;
+  left: 1238px;
+  top: 32px;
+}
+
+.small-star {
+  position: absolute;
+  left: 1220px;
+  top: 270px;
 }
