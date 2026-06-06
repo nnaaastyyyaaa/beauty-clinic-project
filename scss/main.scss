@@ -1,0 +1,28 @@
+@import "./utils/fonts";
+
+@import "./utils/variables";
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  padding: 24px;
+  margin: 0 auto;
+}
+
+@import "./utils/base";
+
+@import "./components/header";
+
+@import "./components/main";
+
+@import "./components/about";
+
+@import "./components/reasons";
+
+@import "./components/procedures";
+
+@import "./components/location";
+
+@import "./components/footer";
+
+@import "./components/modal";

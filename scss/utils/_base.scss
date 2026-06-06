@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--color-primary-blue-dark);
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+h2 {
+  font-family: Play sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+}
+
+address {
+  font-style: normal;
+}
+
+li {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0px;
+}

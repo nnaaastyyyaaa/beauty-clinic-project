@@ -1,0 +1,43 @@
+.hero-section {
+  background: url(../images/background-main.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: right;
+}
+
+.main-section {
+  padding: 124px 705px 126px 205px;
+}
+
+.name-text {
+  margin-bottom: 16px;
+}
+.main-title {
+  color: var(--color-primary-blue-light);
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 0.8;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+
+.main-button,
+.modal-button {
+  color: var(--color-primary-light);
+  background-color: var(--color-primary-blue-light);
+  border: 2px solid var(--color-primary-blue-light);
+  border-radius: 32px;
+  font-weight: 600;
+  padding: 16px 32px;
+}
+
+.main-button:hover {
+  color: var(--color-primary-blue-dark);
+  background-color: transparent;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+}
