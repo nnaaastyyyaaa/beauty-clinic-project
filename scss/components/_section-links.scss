@@ -1,0 +1,14 @@
+.section-link-container {
+  display: flex;
+  gap: 56px;
+
+  &__link {
+    color: var(--color-primary-blue-dark);
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--color-primary-blue-light);
+    }
+  }
+}

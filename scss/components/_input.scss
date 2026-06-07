@@ -1,0 +1,19 @@
+.input {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 24px;
+  border: 2px solid var(--color-secondary-grey-light);
+  border-radius: 32px;
+  background-color: transparent;
+  padding: 18px 32px;
+  width: 100%;
+
+  &::placeholder {
+    color: var(--color-primary-light);
+  }
+
+  &:focus {
+    outline: none;
+    background-color: var(--color-secondary-grey-light);
+  }
+}

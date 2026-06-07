@@ -1,0 +1,25 @@
+.location-container {
+  padding: 48px 105px 48px 76px;
+
+  &__title {
+    padding: 0 314px;
+
+    &--accent {
+      color: var(--color-primary-blue-light);
+    }
+  }
+
+  &__content {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.map {
+  &__iframe {
+    border-radius: 32px;
+    width: 605px;
+    height: 481px;
+    border: none;
+  }
+}

@@ -1,0 +1,19 @@
+.stars {
+  &__small {
+    position: absolute;
+    left: 1220px;
+    top: 270px;
+  }
+
+  &__middle {
+    position: absolute;
+    left: 1238px;
+    top: 32px;
+  }
+
+  &__big {
+    position: absolute;
+    left: 880px;
+    top: 346px;
+  }
+}

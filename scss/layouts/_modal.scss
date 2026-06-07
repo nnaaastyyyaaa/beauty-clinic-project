@@ -68,32 +68,6 @@
   overflow: hidden;
 }
 
-.input {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 24px;
-  border: 2px solid var(--color-secondary-grey-light);
-  border-radius: 32px;
-  background-color: transparent;
-  padding: 18px 32px;
-  width: 100%;
-}
-
-.input::placeholder {
-  color: var(--color-primary-light);
-}
-
-.input:focus {
-  outline: none;
-  background-color: var(--color-secondary-grey-light);
-}
-
 .modal-form {
   padding: 0 62px;
-}
-
-.modal-button {
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
 }

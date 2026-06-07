@@ -1,28 +1,49 @@
+@import "./components/header-nav";
+
+@import "./components/section-links";
+
+@import "./components/button";
+
+@import "./components/background";
+
+@import "./components/stars";
+
+@import "./components/advantages";
+
+@import "./components/title";
+
+@import "./components/location-form";
+
+@import "./components/terms";
+
+@import "./components/input";
+
+@import "./components/procedures-list";
+
+@import "./components/footer-icons";
+
+@import "./components/copyright";
+
+@import "./layouts/header";
+
+@import "./layouts/main";
+
+@import "./layouts/about";
+
+@import "./layouts/container";
+
+@import "./layouts/reasons";
+
+@import "./layouts/procedures";
+
+@import "./layouts/location";
+
+@import "./layouts/footer";
+
+@import "./layouts/modal";
+
 @import "./utils/fonts";
 
 @import "./utils/variables";
 
-.container {
-  width: 100%;
-  max-width: 1288px;
-  padding: 24px;
-  margin: 0 auto;
-}
-
 @import "./utils/base";
-
-@import "./components/header";
-
-@import "./components/main";
-
-@import "./components/about";
-
-@import "./components/reasons";
-
-@import "./components/procedures";
-
-@import "./components/location";
-
-@import "./components/footer";
-
-@import "./components/modal";

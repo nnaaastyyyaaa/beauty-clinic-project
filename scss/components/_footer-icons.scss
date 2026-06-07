@@ -1,0 +1,10 @@
+.icons-container {
+  &__items {
+    display: flex;
+    padding: 0;
+    gap: 16px;
+  }
+  &__icons {
+    fill: var(--color-primary-light);
+  }
+}

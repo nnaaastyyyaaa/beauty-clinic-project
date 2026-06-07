@@ -1,0 +1,49 @@
+.about-container {
+  padding: 0 0 88px 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  height: 695px;
+
+  &__text {
+    margin-bottom: 40px;
+
+    &--accent {
+      color: var(--color-primary-blue-light);
+      text-transform: capitalize;
+    }
+  }
+
+  &__title {
+    max-width: 529px;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.7;
+    max-width: 709px;
+
+    &--accent {
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+  }
+
+  &__image {
+    border-radius: 350px;
+    width: 327px;
+    height: 327px;
+
+    &--before {
+      left: 742px;
+      position: absolute;
+    }
+
+    &--after {
+      left: 914px;
+      top: 368px;
+      position: absolute;
+    }
+  }
+}

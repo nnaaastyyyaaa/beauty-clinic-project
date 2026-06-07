@@ -1,0 +1,22 @@
+.header-container-nav {
+  display: flex;
+  align-items: center;
+  gap: 240px;
+  padding: 32px 0;
+  margin: 0 auto;
+
+  &__section-links {
+    display: flex;
+    align-items: center;
+    gap: 240px;
+  }
+
+  &__social-media-links {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__icons {
+    fill: var(--color-primary-blue-dark);
+  }
+}

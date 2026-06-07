@@ -1,0 +1,15 @@
+.button {
+  color: var(--color-primary-light);
+  background-color: var(--color-primary-blue-light);
+  border: 2px solid var(--color-primary-blue-light);
+  border-radius: 32px;
+  font-weight: 600;
+  padding: 16px 32px;
+  transition: color 0.3s;
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}

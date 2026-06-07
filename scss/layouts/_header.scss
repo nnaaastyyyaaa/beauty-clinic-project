@@ -1,0 +1,11 @@
+.header-container {
+  display: flex;
+  max-width: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 24px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+}
